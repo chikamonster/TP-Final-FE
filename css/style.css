@@ -38,10 +38,11 @@ header {
     justify-content: space-between;
     height: 120px;
 }
-  
+.headerLogo{
+    margin-left: 40px;
+}
 header img{
-    padding-left: 40px;
-    width: 130px;
+    width: 80px;
 }
   
   nav {
@@ -55,7 +56,7 @@ header img{
       width: 100%;
       height: 100vh;
       background: white;
-      top: 60px;
+      top: 80px;
       left: -100%;
       text-align: center;
       transition: all .5s;}
@@ -76,6 +77,7 @@ header button{
   a:link {
     text-decoration: none; }
   
+/* Menu Hamburguesa */    
   .checkbtn {
     font-size: 25px;
     color: #242E52;
@@ -107,7 +109,7 @@ header button{
 /* Main Css */
 /* Background Image */
 
-.bgImg{
+.leftBox{
     background-image: url(../img/padel-intro.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -288,7 +290,9 @@ article{
     margin-top: 40px;
     padding-bottom: 45px;
 }
-    
+ 
+/* Footer */
+
 footer{
     background-color: #1E1E26;
     display: flex;
@@ -356,4 +360,102 @@ footer .row-center-center p{
     font-size: 12px;
     font-weight: 700;
     padding: 40px 0;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 890px){
+
+    .checkbtn{
+        display: none;
+    }
+    header{
+        justify-content: space-around;
+    }
+        header button{
+            display: block;
+        }
+.headerLogo{
+    margin-left: 0;
+}
+    nav{
+        position: initial;
+        margin-right: 0;
+    }
+        nav ul{
+            position: initial;
+            height: auto;
+            transition: none;
+        }
+            nav ul li{
+                display: inline-block;
+                padding-top: 0;
+                line-height: 0;
+                padding-right: 30px;
+            }
+                nav ul li a{
+                    font-size: 15px;
+                }
+.gralButton{
+    height: 40px;
+    width: 110px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0, .2));
+}
+.mainTopBox{
+    display: flex;
+    flex-direction: row;
+    padding: 0 150px;
+    margin-top: 90px;
+    justify-content: center;
+    height: 65vh;
+    width: 100%;
+}
+.leftBox{
+    width: 50%;
+}
+.rightBox{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.mainTitle h2{
+    font-size: 2.9vw;
+}
+.mainTitle p{
+    font-size: 1.3vw;
+    padding: 0 35px 0 15px;
+    margin-top: 20px;
+}
+.infoTitle{
+    background-color: #8C48BF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    .infoTitle h2{
+        padding: 40px 20px 40px 130px;
+        flex: 0 0 60%;
+        font-size: 3.1vw;
+    }
+    .infoTitle p{
+        padding: 40px 50px 40px 20px;
+        font-size: 1.2vw;
+    }
+
+section{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 60px;
+    justify-content: center;
+    gap: 50px;
+}
+article{
+    flex:0 0 35%;
+}
+    .artTitle{
+        background-color: transparent;
+    }
 }
