@@ -115,7 +115,7 @@ header {
     .mainTitle p{
         font-size: 18px;
         margin-top: 10px;
-        padding: 0 35px 0 5px;
+        padding: 10px 35px 0 15px;
         text-align: right;
     }
 
@@ -141,20 +141,19 @@ header {
 }
 .infoTitle{
     background-color: #3CDCF2;
-    height: 30vh;
+    height: fit-content;
+    gap: 30px;
 }
     .infoTitle h2{
         color: white;
         font-size: 40px;
         font-weight: 700;
-        padding: 30px 75px 0 25px;
-        margin-top: 15px;
+        padding: 40px 75px 0 25px;
     }
     .infoTitle p{
         color: white;
         font-size: 16px;
-        padding: 0 30px 20px 25px;
-        margin-bottom: 15px;
+        padding: 0 30px 40px 25px;
     }
 
 section{
@@ -183,7 +182,7 @@ article{
     height:100%;
     border-radius: 35px;
     position: absolute;
-    right: 90%;
+    right: 70%;
     z-index: 3;
 }
     .artNumb p{
@@ -196,7 +195,7 @@ article{
     background-color: #DDC9EC;
     position: absolute;
     height: 100%;
-    width: 95%;
+    width: 75%;
     z-index: 2;
 }
     .artTitle p{
@@ -213,12 +212,9 @@ article{
     font-size: 16.5px;
 }
 
-.mainTestimony{
-
-}
 .mainTestimony h3{
     color: #242E53;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
 }
 .testimonyInfo{
