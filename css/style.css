@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -33,32 +34,32 @@ header {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;}
+    justify-content: space-between;}
   
-  .header-logo {
-    width: 70px;
-    min-width: 70px;
-    height: 60px;
-    margin-left: 2em; }
+header img{
+    padding-left: 40px;
+    width: 130px;
+}
   
   nav {
     background: white;
-    width: fit-content;
     z-index: 1000; }
     nav ul {
       float: right;
       margin-right: 20px; }
       nav ul li {
-        display: inline-block;
-        line-height: 60px;
-        margin: 0 5px; }
+        line-height: 30px;
+        padding-top: 40px;}
         nav ul li a {
-          padding: 7px;
-          font-size: 13px;
+          font-size: 20px;
           position: relative;
           color: #242E52;
           ; }
   
+header button{
+    display: none;
+}
+          
   a:link {
     text-decoration: none; }
   
@@ -67,7 +68,6 @@ header {
     color: #242E52;
     float: right;
     line-height: 50px;
-    margin-right: 40px;
     cursor: pointer;
     display: none; }
   
@@ -157,14 +157,17 @@ header {
     }
 
 section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
         margin-top: 60px;
     }
 
 article{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin-bottom: 40px;
+    width: 90%;
 }
 
 .artHeader{
@@ -173,7 +176,6 @@ article{
     justify-content: right;
     position: relative;
     height: 40px;
-    width: 430px;
     z-index: 1;
 }
 .artNumb{
@@ -182,7 +184,7 @@ article{
     height:100%;
     border-radius: 35px;
     position: absolute;
-    right: 70%;
+    right: 90%;
     z-index: 3;
 }
     .artNumb p{
@@ -195,26 +197,26 @@ article{
     background-color: #DDC9EC;
     position: absolute;
     height: 100%;
-    width: 75%;
+    width: 100%;
     z-index: 2;
 }
     .artTitle p{
         color:#323851;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
+        padding-left: 30px;
     }
 
 .artDescription{
     color: #737376;
     padding-top: 25px;
-    padding-left: 40px;
     padding-right: 15px;
     font-size: 16.5px;
 }
 
 .mainTestimony h3{
     color: #242E53;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
 }
 .testimonyInfo{
@@ -282,14 +284,13 @@ article{
           position: fixed;
           width: 100%;
           height: 100vh;
-          background: #181818;
+          background: white;
           top: 60px;
           left: -100%;
           text-align: center;
           transition: all .5s; }
           ul li {
             display: block;
-            margin: 50px 0;
             line-height: 30px; }
             ul li a {
               font-size: 15px; }
