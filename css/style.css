@@ -30,7 +30,14 @@
 }
 
 /* Header */
-header {
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.headerBox {
     background-color: white;
     width: 100%;
     display: flex;
@@ -41,7 +48,7 @@ header {
 .headerLogo{
     margin-left: 40px;
 }
-header img{
+.headerBox img{
     width: 80px;
 }
   
@@ -70,7 +77,7 @@ header img{
           ; }
           #check:checked ~ ul {
             left: 0; }
-header button{
+.headerBox button{
     display: none;
 }
           
@@ -124,13 +131,13 @@ header button{
     font-size: 40px;
     font-weight: 700;
     margin-top: 50px;
-    padding: 0 35px 0 75px;
+    padding-left: 75px;
     text-align: right;
 }
     .mainTitle p{
         font-size: 18px;
         margin-top: 10px;
-        padding: 10px 35px 0 15px;
+        padding: 10px 0 0 15px;
         text-align: right;
     }
 
@@ -146,7 +153,6 @@ header button{
 .mainButton{
     display: flex;
     justify-content: right;
-    padding-right: 35px;
     margin-top: 25px;
 }
 
@@ -364,15 +370,16 @@ footer .row-center-center p{
 
 /* Desktop */
 
-@media screen and (min-width: 890px){
+@media screen and (min-width: 1024px){
 
     .checkbtn{
         display: none;
     }
     header{
-        justify-content: space-around;
+        padding-left: 150px;
+        padding-right: 150px;
     }
-        header button{
+        .headerBox button{
             display: block;
         }
 .headerLogo{
@@ -404,7 +411,6 @@ footer .row-center-center p{
 .mainTopBox{
     display: flex;
     flex-direction: row;
-    padding: 0 150px;
     margin-top: 90px;
     justify-content: center;
     height: 65vh;
@@ -423,7 +429,7 @@ footer .row-center-center p{
 }
 .mainTitle p{
     font-size: 1.3vw;
-    padding: 0 35px 0 15px;
+    padding-left: 15px;
     margin-top: 20px;
 }
 .infoTitle{
