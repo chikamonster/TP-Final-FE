@@ -34,8 +34,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .headerBox {
     background-color: white;
@@ -376,8 +376,8 @@ footer .row-center-center p{
         display: none;
     }
     header{
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
         .headerBox button{
             display: block;
@@ -401,7 +401,7 @@ footer .row-center-center p{
                 padding-right: 30px;
             }
                 nav ul li a{
-                    font-size: 15px;
+                    font-size: 17px;
                 }
 .gralButton{
     height: 40px;
@@ -432,20 +432,31 @@ footer .row-center-center p{
     padding-left: 15px;
     margin-top: 20px;
 }
-.infoTitle{
+.infoTitle, .mainEnd{
     background-color: #8C48BF;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
+    .endTitle{
+        padding: 0;
+        flex: 0 0 40%;
+    }
+    .endButton{
+        padding: 0;
+        margin: 0;
+    }
     .infoTitle h2{
         padding: 40px 20px 40px 130px;
-        flex: 0 0 60%;
-        font-size: 3.1vw;
+        flex: 0 0 45%;
+        font-size: 2.5vw;
     }
     .infoTitle p{
         padding: 40px 50px 40px 20px;
-        font-size: 1.2vw;
+        font-size: 1vw;
+        flex: 0 0 30%;
     }
 
 section{
@@ -461,7 +472,36 @@ section{
 article{
     flex:0 0 35%;
 }
+.artHeader{
+    justify-content: left;
+}
     .artTitle{
         background-color: transparent;
+        width: auto;
     }
+        .artTitle p{
+            padding-left: 70px;
+        }
+
+.testimonyInfo{
+    width: 30%;
+}
+.testimonyBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mainEnd{
+    background-color:#3CDDF3;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+.endTitle h2{
+    padding: 80px 0;
+    flex: 0 0 45%;
+    font-size: 2.5vw;
+    text-align: left;
+}
+
 }
