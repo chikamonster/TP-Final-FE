@@ -49,7 +49,7 @@ header{
     margin-left: 40px;
 }
 .headerBox img{
-    width: 80px;
+    width: 90px;
 }
   
   nav {
@@ -136,8 +136,8 @@ header{
 }
     .mainTitle p{
         font-size: 18px;
-        margin-top: 10px;
-        padding: 10px 0 0 15px;
+        margin-top: 20px;
+        padding-left:25px;
         text-align: right;
     }
 
@@ -341,11 +341,13 @@ footer{
     margin-top: 20px;
 }
     .footerNav li{
-        color: rgb(181, 181, 181);
         list-style: none;
+        padding-top: 15px;
+    }
+    footer li a {
+        color: rgb(211, 211, 211); 
         font-size: 16px;
         font-weight: 300;
-        padding-top: 15px;
     }
 
 .socialMediaIcons{
@@ -369,21 +371,33 @@ footer .row-center-center p{
 }
 
 /* Desktop */
-
 @media screen and (min-width: 1024px){
 
     .checkbtn{
         display: none;
     }
     header{
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
         .headerBox button{
             display: block;
         }
-.headerLogo{
-    margin-left: 0;
+        .headerBox img{
+            width: 110px;
+        }
+        .headerLogo{
+            margin-left: 0;
+        }
+button{
+    cursor: pointer;
+    scale: 1;
+    transition: .3s;
+}
+button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: .3s;
 }
     nav{
         position: initial;
@@ -402,6 +416,9 @@ footer .row-center-center p{
             }
                 nav ul li a{
                     font-size: 17px;
+                }
+                nav ul li a:hover{
+                    color:#8C48BF ;
                 }
 .gralButton{
     height: 40px;
@@ -430,7 +447,10 @@ footer .row-center-center p{
 .mainTitle p{
     font-size: 1.3vw;
     padding-left: 15px;
-    margin-top: 20px;
+    margin-top: 35px;
+}
+.mainButton{
+    margin-top: 35px;
 }
 .infoTitle, .mainEnd{
     background-color: #8C48BF;
@@ -503,5 +523,59 @@ article{
     font-size: 2.5vw;
     text-align: left;
 }
+/* Footer */
 
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0 40px;
+    justify-content: space-evenly;
+}
+    .imgBox{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 0;
+        order: 1;
+    }
+        .imgBox .footerLogo{
+            order: -1;
+        }
+        .imgBox .socialMediaIcons{
+            gap: 20px;
+            padding: 0;
+        }
+    .footerNav{
+        flex-basis: 35%;
+        padding: 0;
+        margin: 0;
+        order: 2;
+    }
+        .footerNav li{
+            padding-top: 0;
+            padding-bottom: 20px;
+        }
+    .emailForm{
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+        order: 3;
+    }
+        .copyRight{
+            order: 1;
+        }
+        .emailBox{
+            display: flex;
+            gap: 10px;
+            width: auto;
+        }
+            .emailBox input{
+                width: 250px;
+            }
+            .emailBox button{
+                width: 60px;
+            }
 }
