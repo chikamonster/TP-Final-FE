@@ -154,6 +154,10 @@ header{
         }
         .gralButton a{
             color: white;
+            display: block;
+            padding-top: 10px;
+            height: 40px;
+            width: 110px;
         }
 .mainButton{
     display: flex;
