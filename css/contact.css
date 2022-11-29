@@ -39,13 +39,13 @@ body {
 }
 .row-center-center{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 /* Header */
 header{
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,6 @@ header{
 }
   
   nav {
-    background: white;
     position: absolute;
     right: 0;
     margin-right: 60px;
@@ -87,7 +86,7 @@ header{
         nav ul li a {
           font-size: 20px;
           position: relative;
-          color: #242E52;}
+          color:#323851;}
 
           #check:checked ~ ul {
             left: 0; }
@@ -102,7 +101,7 @@ header{
 /* Menu Hamburguesa */    
   .checkbtn {
     font-size: 25px;
-    color: #242E52;
+    color:#323851;
     float: right;
     line-height: 50px;
     cursor: pointer;
@@ -115,46 +114,31 @@ header{
     transform: scaleX(1); }
 
 
-/* Main Css */
-/* Background Image */
 
-.leftBox{
-    background-image: url(../img/padel-intro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 20px;
-    height: 50vh;
-}
-
-/* Image Information */
-
-.mainTitle h2{
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 50px;
-    padding-left: 75px;
-    text-align: right;
-}
-    .mainTitle p{
-        font-size: 18px;
-        margin-top: 20px;
-        padding-left:25px;
-        text-align: right;
-    }
-
-        .gralButton{
-            background-color:#8B48BF;
-            border: none;
-            border-radius: 25px;
-            color: white;
-            font-size: 15px;
-            height: 44px;
-            width: 134px;
+.gralButton{
+    background-color:#8B48BF;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    height: 44px;
+    width: 134px;
         }
         .gralButton a{
             color: white;
         }
+
+.altButton{
+    background-color:white;
+    border: none;
+    border-radius: 25px;
+    color:#8B48BF;
+    font-size: 15px;
+    height: 44px;
+    width: 134px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0, .2));
+}
+
 .mainButton{
     display: flex;
     justify-content: right;
@@ -163,146 +147,115 @@ header{
 
 .mainInfo{
     margin-top: 40px;
+    flex-basis: 30%;
 }
 .infoTitle{
-    background-color: #3CDCF2;
     height: fit-content;
     gap: 30px;
 }
     .infoTitle h2{
-        color: white;
+        color:#8B48BF;
         font-size: 40px;
         font-weight: 700;
-        padding: 40px 75px 0 25px;
-    }
-    .infoTitle p{
-        color: white;
-        font-size: 16px;
-        padding: 0 30px 40px 25px;
+        padding: 0 40px;
+        text-align: center;
     }
 
-section{
+.mainEnd{ 
+    align-items: center;
+    background-color: #8C48BF;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-        margin-top: 60px;
-    }
-
-article{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    width: 90%;
+    justify-content: center;
+    margin-top: 50px;
 }
+.endTitle h2{
+    color: white;
+    padding: 60px 0;
+    font-size: 5vw;
+    font-weight: 700;
+}
+/* Formulario */
 
-.artHeader{
+.mainForm{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .formContBox{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+ }
+ .formContBox h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+ }
+ .formContBox p{
+    color:#8B48BF;
+    font-weight: 300;
+    font-size: 15px;
+ }
+ .formBox{
+    margin: 50px 30px;
+ }
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-between;
+    gap: 40px;
+}
+.formInput input, select{
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #8B48BF;
+    outline: none;
+    padding: 5px;
+}
+.formInput input[type="checkbox"]{
+    height: 15px;
+}
+.formInput label{
+    color: white;
+    font-weight: 300;
+}
+.formInput textarea{
+    border: 2px solid #8B48BF;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    padding: 6px;
+    resize: none;
+}
+.formCheck{
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    position: relative;
-    height: 40px;
-    z-index: 1;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-.artNumb{
-    background-color: #8B48BF;
-    width:15%;
-    height:100%;
-    border-radius: 35px;
-    position: absolute;
-    right: 90%;
-    z-index: 3;
+    .formCheck #checkmark:checked{
+        accent-color: #8B48BF;
+    }
+    .checkBox{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
-    .artNumb p{
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-.artTitle{
-    background-color: #DDC9EC;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-}
-    .artTitle p{
-        color:#323851;
-        font-size: 15px;
-        font-weight: 700;
-        padding-left: 30px;
-    }
-
-.artDescription{
-    color: #737376;
-    padding-top: 25px;
-    padding-right: 15px;
-    font-size: 16.5px;
-}
-.mainTestimony{
-    margin-top: 60px;
-}
-    .mainTestimony h3{
-        color: #242E53;
-        font-size: 30px;
-        font-weight: 700;
-    }
-.testimonyInfo{
-    background-color: #FAFAFA;
-    margin: 90px 15px 0 15px;
-    position: relative;
-    height: fit-content;
-    z-index: 1;
-}
-    .testimonyInfo img{
-        position: absolute;
-        top: -15%;
-        z-index: 2;
-    }
-    .testimonyInfo h4{
-        color: #242E53;
-        padding-top: 50px;
-        font-weight: 700;
-        font-size: 18px;
-    }
-    .testimonyInfo p{
-        color: #737376;
-        padding: 25px 25px 40px 25px;
-        text-align: center;
-    }
-    .testimonyButton{
-        margin-top: 40px;
-    }
-.mainEnd{
-    background-color: #3CDDF3;
-    margin-top: 60px;
-    height: fit-content;
-}    
-    .endTitle{
-        padding: 45px 80px 0;
-    }
-    .mainEnd h2{
-        color: white;
-        font-size: 45px;
-        font-weight: 500;
-        text-align: center;
-    }
-    
-.altButton{
-    background-color:#232C50;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-size: 15px;
-    height: 44px;
-    width: 134px;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0, .2));
+.formButton{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.endButton{
-    margin-top: 40px;
-    padding-bottom: 45px;
-}
- 
 /* Footer */
 
 footer{
@@ -429,11 +382,10 @@ button a{
             }
                 nav ul li a{
                     font-size: 17px;
-                    scale: 1;
                     transition: .3s;
                 }
-                ul li a:hover{
-                    color:#8C48BF;
+                nav ul li a:hover{
+                    color:#8B48BF;
                     transition: .3s;
                 }
 .gralButton{
@@ -441,107 +393,105 @@ button a{
     width: 110px;
     filter: drop-shadow(0 4px 8px rgba(0,0,0, .2));
 }
-.altButton{
-    background-color: white;
-    color: #8B48BF;
-}
-.mainTopBox{
-    display: flex;
-    flex-direction: row;
-    margin-top: 90px;
-    justify-content: center;
-    height: 65vh;
-    width: 100%;
-}
-.leftBox{
-    width: 50%;
-}
-.rightBox{
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-}
-.mainTitle h2{
-    font-size: 2.9vw;
-}
-.mainTitle p{
-    font-size: 1.3vw;
-    padding-left: 15px;
-    margin-top: 35px;
-}
 .mainButton{
     margin-top: 35px;
 }
-.infoTitle, .mainEnd{
-    background-color: #8C48BF;
+.infoTitle{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
-    .endTitle{
-        padding: 0;
-        flex: 0 0 40%;
-    }
-    .endButton{
-        padding: 0;
-        margin: 0;
-    }
     .infoTitle h2{
-        padding: 40px 20px 40px 130px;
-        flex: 0 0 45%;
-        font-size: 2.5vw;
+        padding: 40px 75px 40px 25px;
+        text-align: left;
     }
-    .infoTitle p{
-        padding: 40px 50px 40px 20px;
-        font-size: 1vw;
-        flex: 0 0 30%;
-    }
+/* Formulario */
 
-section{
-    background-color: #FAFAFA;
+.mainForm{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 0;
-    padding-top: 60px;
-    justify-content: center;
-    gap: 50px;
-}
-article{
-    flex:0 0 35%;
-}
-.artHeader{
-    justify-content: left;
-}
-    .artTitle{
-        background-color: transparent;
-        width: auto;
-    }
-        .artTitle p{
-            padding-left: 70px;
-        }
-
-.testimonyInfo{
-    width: 30%;
-}
-.testimonyBox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.mainEnd{
+    padding: 50px 0;
+ }
+
+ .formContBox{
+    width: 50vw;
+ }
+
+ .formContBox h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+ }
+ .formContBox p{
+    color:#8B48BF;
+    font-weight: 300;
+    font-size: 15px;
+ }
+ .formBox{
+    margin: 20px 60px;
+ }
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
     justify-content: space-between;
-    padding: 0 15%;
+    padding: 20px 10px;
+    gap: 0;
 }
-.endTitle h2{
-    padding: 80px 0;
-    flex: 0 0 45%;
-    font-size: 2.5vw;
-    text-align: left;
+.formInput input, select{
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #8B48BF;
+    outline: none;
+    padding: 5px;
 }
+.formInput input[type="checkbox"]{
+    height: 15px;
+}
+.formInput label{
+    color: white;
+    font-weight: 300;
+}
+.formInput textarea{
+    border: 2px solid #8B48BF;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    padding: 6px;
+    resize: none;
+}
+.formCheck{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+    .formCheck #checkmark:checked{
+        accent-color: #8B48BF;
+    }
+    .checkBox{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.mainEnd{
+    margin: 0;
+}
+    .endTitle h2{
+        font-size: 2vw;
+    }
 
 /* Footer */
 
@@ -579,7 +529,6 @@ footer{
             padding-top: 0;
             padding-bottom: 20px;
         }
-
     .emailForm{
         align-items: flex-start;
         display: flex;
