@@ -150,7 +150,7 @@ header{
             color: white;
             font-size: 15px;
             height: 44px;
-            width: 134px;
+            width: 110px;
         }
         .gralButton a{
             color: white;
@@ -441,8 +441,6 @@ button a{
                     transition: .3s;
                 }
 .gralButton{
-    height: 40px;
-    width: 110px;
     filter: drop-shadow(0 4px 8px rgba(0,0,0, .2));
 }
 .altButton{
